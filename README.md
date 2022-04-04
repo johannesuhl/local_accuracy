@@ -52,3 +52,7 @@ accuracy_assessment_zonal.py:
 
 accuracy_assessment_focal_multi_res.py: 
 <img width="1000" src="https://github.com/johannesuhl/local_accuracy/blob/main/fig3.JPG">
+
+References:
+
+Uhl, J. H., & Leyk, S. (2022). A framework for scale-sensitive, spatially explicit accuracy assessment of binary built-up surface layers. arXiv preprint arXiv:2203.11253. https://arxiv.org/abs/2203.11253
