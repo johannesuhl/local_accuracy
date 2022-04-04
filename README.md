@@ -1,4 +1,4 @@
-# local_accuracy
+# Spatially explicit, scale-sensitive accuracy assessment of binary gridded datasets
 A set of python scripts for spatially explicit, scale-sensitive accuracy assessments of binary, gridded geospatial data, e.g., for human settlement data mapping built-up (1) and not built-up (0) areas.
 
 Global classification / data accuracy estimates ofteh ignore the spatial variation of accuracy within a dataset. Thie suite of scripts allows for estimating the accuracy of a gridded, binary dataset, given a reference dataset in the same spatial grid and extent, in a spatially explicit way. This includes the computation of zonal accuracy estimates based on an additional, vector-based zoning dataset, and the computation of focal accuracy estimates in (overlapping), quadratic focal windows.
