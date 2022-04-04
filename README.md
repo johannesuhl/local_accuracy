@@ -14,3 +14,32 @@ Script overview:
 - accuracy_assessment_global_multi_res.py: Calculates a global accuracy estimate at various levels of block size.
 - accuracy_assessment_zonal.py: Calculates accuracy metrics within given polygonal zoning data in shapefile format. Creates a shapefile with a range of accuracy metrics appended to the input vector data.
 - accuracy_assessment_focal_multi_res.py: Calculates focal accuracy estimates within a user-defined range of spatial support levels, and for a range of user-defined analytical units (i.e., block sizes). The outputs are focal accuracy estimates in a CSV file, as well as a faceted scatterplot of localized Precision and Recall, for each combination of spatial support and block size.
+- accmeas.py: Contains functions to calculate accuracy / agreement metrics, to be applied via lambda functions to a pandas DataFrame holding the counts of true positives (tp), false negative (fn), etc.
+
+
+These metrics include:
+- Percentage correctly classified (PCC), aka overall accuracy
+- Precision, Recall, F1-score
+- Adjusted F-score
+- Cohen's Kappa
+- Intersection-over-union
+- G-mean
+- Matthew's correlation coefficient
+- Rbsolutie error (total positive test instances - total positive reference instances)
+- Relative error (total positive test instances - total positive reference instances) / total positive reference instances)
+These functions can be applied like this:
+
+        df['pcc'] = df.apply(lambda row : accmeas.pcc(row.tp,row.tn,row.fp,row.fn), axis = 1)
+        df['nmi'] = df.apply(lambda row : accmeas.nmi(row.tp,row.tn,row.fp,row.fn), axis = 1)
+        df['recall'] = df.apply(lambda row : accmeas.recall(row.tp,row.tn,row.fp,row.fn), axis = 1)
+        df['precision'] = df.apply(lambda row : accmeas.precision(row.tp,row.tn,row.fp,row.fn), axis = 1)
+        df['kappa'] = df.apply(lambda row : accmeas.kappa(row.tp,row.tn,row.fp,row.fn), axis = 1)
+        df['f1'] = df.apply(lambda row : accmeas.f1(row.tp,row.tn,row.fp,row.fn), axis = 1)
+        df['gmean'] = df.apply(lambda row : accmeas.gmean(row.tp,row.tn,row.fp,row.fn), axis = 1)
+        df['iou'] = df.apply(lambda row : accmeas.iou(row.tp,row.tn,row.fp,row.fn), axis = 1)
+        df['f1_adjusted'] = df.apply(lambda row : accmeas.f1_adjusted(row.tp,row.tn,row.fp,row.fn), axis = 1)
+        df['abs_err'] = df.apply(lambda row : accmeas.abs_err(row.tp,row.tn,row.fp,row.fn), axis = 1)
+        df['rel_err'] = df.apply(lambda row : accmeas.rel_err(row.tp,row.tn,row.fp,row.fn), axis = 1)
+        df['mcc'] = df.apply(lambda row : accmeas.mcc(row.tp,row.tn,row.fp,row.fn), axis = 1)   
+
+All functions have a counterpart with suffix "_2" (e.g., pcc --> pcc_2) that allows for element-wise accuracy metric calcculation based on 1-d vectors of true positive, false negatives, etc.
