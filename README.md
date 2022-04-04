@@ -44,5 +44,11 @@ These functions can be applied like this:
 
 All functions have a counterpart with suffix "_2" (e.g., pcc --> pcc_2) that allows for element-wise accuracy metric calcculation based on 1-d vectors of true positive, false negatives, etc.
 
-
+accuracy_assessment_global_multi_res.py: 
 <img width="1000" src="https://github.com/johannesuhl/local_accuracy/blob/main/fig1.JPG">
+
+accuracy_assessment_zonal.py:
+<img width="1000" src="https://github.com/johannesuhl/local_accuracy/blob/main/fig2.JPG">
+
+accuracy_assessment_focal_multi_res.py: 
+<img width="1000" src="https://github.com/johannesuhl/local_accuracy/blob/main/fig3.JPG">
