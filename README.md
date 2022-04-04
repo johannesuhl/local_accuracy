@@ -57,4 +57,4 @@ References:
 
 Uhl, J. H., & Leyk, S. (2022). A framework for scale-sensitive, spatially explicit accuracy assessment of binary built-up surface layers. arXiv preprint arXiv:2203.11253. https://arxiv.org/abs/2203.11253
 
-Uhl, J. H., & Leyk, S. (2017). [Multi-Scale Effects and Sensitivities in Built-up Land Data accuracy Assessments](https://www.researchgate.net/profile/Johannes_Uhl/publication/325813529_Multi-Scale_Effects_and_Sensitivities_in_Built-up_Land_Data_Accuracy_Assessments/links/5b282a06aca2727335b6f1e5/Multi-Scale-Effects-and-Sensitivities-in-Built-up-Land-Data-Accuracy-Assessments.pdf). Internatioal Cartographic Conference, Washington D.C., USA.
+Uhl, J. H., & Leyk, S. (2017). [Multi-Scale Effects and Sensitivities in Built-up Land Data accuracy Assessments](https://www.researchgate.net/profile/Johannes_Uhl/publication/325813529_Multi-Scale_Effects_and_Sensitivities_in_Built-up_Land_Data_Accuracy_Assessments/links/5b282a06aca2727335b6f1e5/Multi-Scale-Effects-and-Sensitivities-in-Built-up-Land-Data-Accuracy-Assessments.pdf). International Cartographic Conference, Washington D.C., USA, July, 2017.
