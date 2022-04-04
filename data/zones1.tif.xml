@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="en"><Esri><CreaDate>20220404</CreaDate><CreaTime>13293100</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="c:\program files (x86)\arcgis\desktop10.8\ArcToolbox\Toolboxes\Conversion Tools.tbx\PolygonToRaster" Date="20220404" Time="132931">PolygonToRaster ./data/zones1.shp FID .\data\zones1.tif CELL_CENTER NONE 40</Process></lineage></DataProperties></Esri></metadata>
